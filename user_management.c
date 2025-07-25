@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-#define MAX_USER  10  // maximum number of users suppported 
+#define MAX_USER  10  // maximum number of users supported 
 #define CREDENTIAL 50  // maximum length of name and password 
 
 typedef struct users {
@@ -30,7 +30,7 @@ int main(){
 printf ("1.Register\n");
 printf ("2.login\n");
 printf ("3.exit\n");
-printf ("choces a option : ");
+printf ("choose a option : ");
 scanf("%d",&option);
 getchar();
     
@@ -50,7 +50,7 @@ getchar();
      }
   else
    {
-    printf("login failed ! incorrent user name or password \n \n");
+    printf("login failed ! incorrect user name or password \n \n");
   }
   break;
 
@@ -90,7 +90,7 @@ fix_fgets_input(users_index[user_count].name) ;
 
 password_input(users_index[user_count].password );
 
-printf("Registation successful  welcome ! : %s\n",users_index[user_count].name);
+printf("Registration successful  welcome ! : %s\n",users_index[user_count].name);
  printf("\n");
 user_count++;
 
@@ -113,7 +113,7 @@ if(
   strcmp(username ,users_index[i].name) == 0 &&
 strcmp( password ,users_index[i].password) == 0 
 ){
-  //printf("\nlogin successful ! welcowe ! : \n%s\n",username);
+  //printf("\nlogin successful ! welcome ! : \n%s\n",username);
    return i;
 }
 
